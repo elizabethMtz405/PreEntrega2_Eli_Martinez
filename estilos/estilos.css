@@ -217,39 +217,59 @@ iframe{
 }
 
 /* estilos de formulario contactos */
-.formulario-contacto{
-    font-family: 'Poppins', sans-serif;
-    display: flex;
-    flex-direction: column-reverse;
-    align-items: center;
-    
-}
-form{
-    background: #87828293;
+.contacto{
+    max-width: 1500px;
+    margin-left: auto;
+    margin-right: auto;
+ 
+    padding: 24px;
 }
 
-.formulario div {
+.contacto-wrapper{
+    box-shadow: 0 0 20px 0 rgba(255, 255, 255, .9);   
+}
+
+.contacto-wrapper > *{
+    padding: 1em;
+}
+
+.contacto_form{
     background: #222222;
-    margin: 10px,20px;
-    padding: 25px;
+    color: white;
+}
+.contacto_form form {
+   display: grid;
+   grid-template-columns: 1fr 1fr;
+   
+} 
+
+.contacto_form form .block{
+    grid-column: 1/3;
 }
 
-.formulario button, .formulario textarea {
-    width: 200px;
+.contacto_form form p{
+    margin: 20px;
+    padding: 10px;
+}
+.contacto_form form button,
+.contacto_form form input,
+.contacto_form form textarea
+{
+    width: 100%;
+    padding: 5px;
     border: none;
+    background: none;
     outline: 0;
     color: white;
-    border-bottom: 1px solid #B70E21;
+    border-bottom: 1px solid #d63031;
+    
 }
-
-.formulario button {
-    height: 40px;    
+.contacto_form form button{
+    height: 30px;
     background: #B70E21;
+    border: 0;
     text-transform: uppercase;
-}
-
-.formulario .ordenar {
-    padding-right: 120px;
+    padding: 10px;
 }
 
 

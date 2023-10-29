@@ -49,43 +49,69 @@
         <h1>CONTACTO</h1>
 
     </main>   
-    <section class="formulario-contacto">
-        <form>
-        <div class="formulario">
-                <label class="ordenar" for="nombre">Nombre </label>
-                <input type="text" name="nombre" placeholder="Ingrese su nombre">
-                <br>
-                <label class="ordenar" for="apellido" >Apellido </label>
-                <input type="text" name="apellido" placeholder="Ingrese su apellido">
-                <br>
-                <label for="correo">Correo electrónico</label>
-                <input type="email" name="correo" placeholder="nombre@ejemplo.com">
-                <br>
-                <label class="ordenar" for="telefono" >Telefono</label>
-                <input type="tel" name="telefono" placeholder="Hasta 10 digitos">
-                <br>
-                <label class="ordenar" for="sexo">Mujer</label>
-                <input type="radio" name="sexo" value="mujer">
-                <label class="ordenar" for="sexo">Hombre</label>
-                <input  type="radio" name="sexo" value="hombre">
-                <br>
-                <label class="ordenar" for="Estado">Estado </label>
-                <select name="Estado">
-                    <option value="Hidalgo">Hidalgo</option>
-                    <option value="CDMX">CDMX</option>
-                    <option value="Toluca">Toluca</option>
-                </select>
-                <br>
-                <label for="opinion">Comentarios</label>
-                <textarea rows="5" cols="15" name="opinion"></textarea>
-                <br>
-                <input type="checkbox" name="acepta" value="1"> <label>Aceptas terminos y condiciones</label>
-                <br>
-
-                <button type="submit">Enviar</button>
+    <div class="contacto">
+        <div class="contacto-wrapper">
+            <div class="contacto_form">
+                <form action="" method="post"><!--Existen dos tipos de metodos el get y post.-->
+                    
+                    <div>
+                        <p>
+                            <label for="nombre">Nombre </label>
+                            <input type="text" name="nombre" placeholder="Ingrese su nombre">
+                        </p>
+                        <p>           
+                            <label for="apellido" >Apellido </label>
+                            <input type="text" name="apellido" placeholder="Ingrese su apellido">
+                        </p>
+                        <p>                
+                            <label for="correo">Correo electrónico</label>
+                            <input type="email" name="correo" placeholder="nombre@ejemplo.com">
+                        </p>
+                        <p>
+                            <label for="telefono" >Telefono</label>
+                            <input type="tel" name="telefono" placeholder="Hasta 10 digitos">
+                        </p>
+                    
+                        <p class="block">
+                            <label for="sexo">Mujer</label>
+                            <input  type="radio" name="sexo" value="mujer">
+                            <label for="sexo">Hombre</label>
+                            <input  type="radio" name="sexo" value="hombre">
+                        </p>
+                        <p>
+                            <label fot="Estado">Estado </label>
+                            <select name="Estado">
+                                <option value="Hidalgo">Hidalgo</option>
+                                <option value="CDMX">CDMX</option>
+                                <option value="Toluca">Toluca</option>
+                            </select><br>
+                        </p>
+                        <p class="block">
+                            <label for="opinion">Comentarios</label>
+                            <textarea rows="5" cols="15" name="opinion"></textarea>
+                        </p>
+                
+                        <p class="block">
+                           <input type="checkbox" name="tyc" value="1"> <label>Aceptas terminos y condiciones</label>
+                        </p>
+                   
+                        <!--Submit sirve para enviar los datos del formulario-->
+                        <!-- <input type="submit" value="Enviar"> -->
+                        <p class="block">
+                            <button type="submit">
+                                Enviar
+                            </button>
+                        </p>
+                    </div>
+                    <div class="form_mapa">
+                        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d5616.531565552204!2d-98.79033833733384!3d20.025919203337462!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x85d1a106b0973827%3A0x9dc0a5a4e4fe0c15!2sARVEO%20DIGITAL%2C%20Impresi%C3%B3n!5e0!3m2!1ses!2smx!4v1648256012705!5m2!1ses!2smx" width="500" height="750"  style="border:0;" allowfullscreen="" loading="" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                    </div>                                        
+                </form>
+                
             </div>
-        </form>
-    </section>
+        </div>
+        
+    </div>
     <!------------------------------- TERMINA FORMULARIO DE CONTACTO ------------------------------------>  
     <!-------------------------  EMPIEZA EL PIE DE PAGINA --------------------------------------->
     <footer class="pie-pagina">
