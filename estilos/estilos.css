@@ -1,0 +1,393 @@
+*{
+    text-decoration: none;
+    margin: 0px;
+    padding: 0px;
+    font-family: sans-serif;
+}
+
+.container{
+    width: 90%;
+    height:auto;
+    margin: 0px auto;
+    border: 1px solid rgba(225,225,226,0.8);
+    box-shadow: 0px 0px 10px #ccc;
+    margin-top: 40px;
+    margin-bottom: 40px;
+    min-height: 600px;
+}
+
+/******* Inician los estilos del Header*******/
+.cabecera{
+    display: grid;
+    grid-template-columns: 30% 70%;
+    align-items: center;
+    width: 100%;
+    height: 180px;
+    
+}
+
+.menu-menu{
+    width: 100%;
+    height: 100%;
+    padding-right: 20px;
+}
+
+.menu, .menu-menu > .menu-items{
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    height: 100%;
+    list-style: none;
+    
+}
+
+.menu-menu a{
+    text-transform: uppercase;
+    color: #444;
+    padding: 15px;
+    transition:all 300ms;
+    text-decoration: none;
+}
+
+.menu-menu a:hover{
+    background: #d97a48;
+    color: white;
+}
+
+.menu-input:checked + .menu-menu{
+    background: tomato;
+}
+
+.menu-label, .menu-input{
+    display: none;
+}
+/******* Finaliza los estilos del Header*******/
+
+/**** Estilos de la clase content ************/
+.content{
+    display: grid;
+    grid-template-columns: 30% 1fr;
+    align-items: stretch;
+    justify-content: space-between;
+    grid-column-gap: 50px;
+
+    padding-top: 20px;
+    padding-bottom: 20px;
+    background-image: url(../images/fondo_arveo_2.jpg);
+    background-size: cover;
+
+}
+/**** Finalizan los estilos de la clase content ************/
+
+/******* Inician los estilos de las tarjetas de los productos (clase products)*******/
+.products{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 20px;
+    align-items: start;
+}
+
+.product{
+    margin-bottom: 25px;
+    margin-right: 20px;
+    border: 1px solid #ccc;
+    background: #42414180;
+}
+
+.product img{
+    width: 100%;
+}
+
+.product-info{
+    padding: 10px;
+}
+
+.product-info a{
+    font-size: 16px;
+    color: black;
+    transition: all 300ms;
+}
+
+.product-info p{
+    font-size: 18px;
+    color: rgb(245, 240, 240);
+}
+/******* Finaliza los estilos de las tarjetas de los productos*******/
+/******* Inician los estilos del menu de los productos (clase aside-product)*******/
+.aside-product{
+    margin-left: 10px;
+    padding: 20px;
+    background: #fdfbfb80;
+}
+
+.aside-product h2{
+    display: block;
+    width: 100%;
+    font-size: 18px;
+    font-weight: 100;
+    color: #444;
+    padding-bottom: 10px;
+    margin-bottom: 20px;
+    border-bottom: 2px solid  rgba(211, 211, 214, 0.8);
+    text-align: center;
+}
+
+.aside-product ul{
+    list-style: none;
+}
+
+.aside-product ul li{
+    padding-bottom: 20px;    
+    padding-left: 0px;
+}
+
+.aside-product a{
+    display: block;
+    padding: 20px;
+    color: #444;
+    text-align: center;
+    text-transform: uppercase;
+    transition: all 300ms;
+    text-decoration: none;
+}
+
+.aside-product a:hover{
+    background: #d97a48;
+    color: #eee;
+}
+/******* Finaliza los estilos del menu de los productos*******/
+
+/*****Estilos de la pagina CONOCENOS *************/
+.main-conocenos, .main-contacto, .main-servicio, .main-producto, .preguntas{
+    font-family: 'Poppins', sans-serif;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.main-conocenos-hijo, .main-servicio-hijo, .preguntas{
+    color: white;
+}
+/***  Contenido de conocenos y servicios  ***/
+
+.conocenos-contenido {
+    font-family: 'Poppins', sans-serif;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding:20px;
+    font-family: 'Poppins', sans-serif;
+}
+
+.preguntas{
+    font-family: 'Poppins', sans-serif;
+    color: white;
+    align-items: start;
+}
+.contenido{
+    background-color: rgba(52, 50, 50, 0.7);
+    border-radius: 10px;
+    width: 1000px;
+    height: 500px;
+    padding: 50px;
+}
+.conocenos-video{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-evenly;
+    padding:20px;
+}
+
+.contenido-video-hijo {
+    font-family: 'Poppins', sans-serif;
+    background-color: rgba(52, 50, 50, 0.7);
+    border-radius: 10px;
+    width: 300px;
+    height: 300px;
+    padding: 100px;
+}
+
+iframe{
+    margin: 80px;
+    border: 10px double blue;
+    border-radius: 15%;
+}
+
+/* estilos de formulario contactos */
+.formulario-contacto{
+    font-family: 'Poppins', sans-serif;
+    display: flex;
+    flex-direction: column-reverse;
+    align-items: center;
+    
+}
+form{
+    background: #87828293;
+}
+
+.formulario div {
+    background: #222222;
+    margin: 10px,20px;
+    padding: 25px;
+}
+
+.formulario button, .formulario textarea {
+    width: 200px;
+    border: none;
+    outline: 0;
+    color: white;
+    border-bottom: 1px solid #B70E21;
+}
+
+.formulario button {
+    height: 40px;    
+    background: #B70E21;
+    text-transform: uppercase;
+}
+
+.formulario .ordenar {
+    padding-right: 120px;
+}
+
+
+
+/******* Inicia los estilos del footer **********/
+
+.pie-pagina{
+    display: grid;
+    grid-template-columns:  25% auto ;
+    align-items: center;
+    border-top:  1px solid  rgba(225,225,226,0.8);
+}
+
+.pie-pagina .logo{
+    opacity: 0.5;
+    text-align: left;
+    margin-right: 20px;
+}
+
+.pie-pagina .redes{
+    margin-left: 20px;
+    color: #444;
+    justify-content: end;
+}
+
+/******** Finaliza los estilos del footer***********/
+/********Iniciamos con las medias querys para que la pagina sea responsive*****************/
+@media (max-width: 1202px){
+    .cabecera{
+        display: grid;
+        grid-template-columns: 100%;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .cabecera h1{
+        text-align: center;
+        height: 140px;
+    }
+    .content{
+        display: grid;
+        grid-template-columns: 1fr;
+        align-items: stretch;
+        justify-content: space-between;
+        grid-column-gap: auto;
+    
+        background-image: url(../images/fondo_arveo_2.jpg);
+        background-size: cover;
+    
+    }
+    
+    .products{
+        display: grid;
+        grid-template-columns:  repeat(2, 1fr);
+        grid-gap: 20px;
+        
+    }
+    
+    .product{
+        margin-left: 10px;
+        margin-right: 10px;
+        border: 1px solid #ccc;
+        background: #42414180;
+    }
+    .aside-product{
+        margin-right: 10px;
+        margin-bottom: 15px;
+        padding: 15px;
+        background: #fdfbfb80;
+    }
+    
+    .aside-product ul{
+        display: grid;
+        grid-template-columns: repeat(5, 1fr);
+        grid-gap: 40px;        
+    }    
+}
+
+
+@media (max-width: 800px){
+    .cabecera{
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        align-items: center;
+        justify-content: center;
+    }
+
+    .cabecera h1{
+        text-align: center;
+        height: 140px;
+    }
+    
+    .menu-label{
+        display: block;
+        cursor: pointer;
+
+    }
+
+    .menu .menu-menu{
+        position: fixed;
+        top: 80px;
+        bottom: 0;
+        
+        
+        left: 485px;       
+        display: flex;
+        justify-content: flex-start;
+        flex-direction: column;
+        height: 400px;
+        width: 240px;
+        padding-left: 20px;
+    }
+    .menu, .menu-menu > .menu-items{
+        display: flex;
+        flex-direction: column;
+        align-items: flex-end;
+        background-repeat: no-repeat;
+        justify-content: flex-start;
+        height: 100%;
+        list-style: none;
+        color:white;  
+        
+    }
+    
+    .menu, .menu-menu > .menu-items, li{
+        display: flex;
+        flex-direction: column;
+        align-items: flex-end;
+        background-repeat: no-repeat;
+        justify-content: flex-start;
+        height: 100%;
+        list-style: none;
+        color:white;        
+    }
+    .menu-menu > .menu-items{
+        display: none;
+    }
+
+
+
+}
